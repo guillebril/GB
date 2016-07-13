@@ -1,0 +1,157 @@
+html, body {
+	font-size: 16px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+p, li{
+	font-family: 'Ubuntu', sans-serif;
+
+	line-height: 25px;
+}
+
+
+
+.navbar-brand{
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+
+
+
+.navbar-nav{
+	padding-top: 6px;
+}
+p, li{
+	line-height: 25px;
+}
+
+h1, .arrow-down{
+	font-size: 54px !important;
+}
+
+
+.navbar-brand{;
+	padding-top: 10px;;
+	margin-bottom: 20px;
+}
+
+.navbar-nav{
+	padding-top: 6px;
+
+}
+.navbar-nav li a{
+
+	color: white !important; 
+	text-shadow: 0px 0px 18px rgba(0, 0, 0, 1);
+
+}
+.beneficio img{
+	height: 150px;
+}
+
+.beneficio{
+	margin-top: 100px;;
+	padding-right: 84px;
+	padding-left: 84px
+}
+
+
+.tranquilo{
+padding-top: 25vh;	
+
+}
+
+
+.porque{
+	height: 100vh;
+	background-color: #eee;
+}
+
+
+.jumbotron h1{
+	color: white;
+	font-size: 3rem;
+}
+
+.bat-img{
+	display: inline !important;
+	bottom: 0;
+	height: 45px;
+	margin-right: 10px;
+	border-radius: 100px;
+}
+
+.get-batt-header{
+	display: inline;
+	color: white;
+	/*text-shadow: 0px 0px 18px rgba(0, 0, 0, 1);
+*/
+}
+
+.navbar{
+/*-webkit-box-shadow: inset -4px 60px 77px -45px rgba(0,0,0,0.75);
+-moz-box-shadow: inset -4px 60px 77px -45px rgba(0,0,0,0.75);
+box-shadow: inset -4px 60px 77px -45px rgba(0,0,0,0.75);*/
+		background-color: transparent;
+		border-bottom: none;
+		color: white; 
+}
+
+.jumbotron{
+-moz-box-shadow: inset 0px 0px 0px 100000px rgba(0,0,0,0.25);
+-webkit-box-shadow: inset 0px 0px 0px 100000px rgba(0,0,0,0.25);
+box-shadow: inset 0px 0px 0px 10000px rgba(0,0,0,0.25);
+  background-image: url(../img/background-pic.jpeg) ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;/* position: fixed; */
+	height: 100vh;
+
+
+
+
+
+right: 0;
+  background-position: 55%;
+  margin-bottom: 0px;/* position: fixed; */;/* position: fixed; */;
+	
+}
+
+.como-funciona{
+	background-color: #00b186;
+	height: 100vh;
+	color: white;
+	padding-top: 5vh;
+}
+
+.como-img{
+	max-height: 28vh;
+
+}
+
+.como-img img{
+	height: 200px;
+}
+
+.texto{
+	padding-top: 21vh;
+}
+
+.jumbotron img{
+min-height: 185px;
+min-width: 142px;
+}
+
+.lista{
+	padding-left: 20px;
+}
+
+
+.footer{
+	padding-top: 30px;
+	padding-bottom: 20px;
+	background-color: #00b186;
+	color: white;
+}
