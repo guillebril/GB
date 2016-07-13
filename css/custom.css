@@ -139,10 +139,7 @@ right: 0;
 	padding-top: 21vh;
 }
 
-.jumbotron img{
-min-height: 185px;
-min-width: 142px;
-}
+
 
 .lista{
 	padding-left: 20px;
@@ -154,4 +151,24 @@ min-width: 142px;
 	padding-bottom: 20px;
 	background-color: #00b186;
 	color: white;
+}
+
+
+.arrow-down {
+padding-top: 170px;
+animation: levitate 1.2s alternate ease-in-out infinite;
+}
+
+
+.arrow-down img {
+ max-height: 45px !important;
+}
+
+@keyframes levitate {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 25px);
+  }
 }
