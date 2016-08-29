@@ -15,26 +15,43 @@
     <link href="css/reset.css" type="text/css" rel="stylesheet" />
     <link href="css/multi-screen-css.css" type="text/css" rel="stylesheet" />
     <link href="css/custom.css" type="text/css" rel="stylesheet" />
+    <link href="css/navbar.css" type="text/css" rel="stylesheet" />
     <title>GetBatt</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
 </head>
 
 <body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+     <a class="navbar-brand" href="#">
+        <img alt="Brand" src="...">       
+      </a>
+      <a href="javascript:void(0)" class="ms-nav-link" data-ms-target="top-screen" data-ms-exit-animation="left" data-ms-enter-animation="right">go up</a> 
+  </div>
+</nav>
     <div class="arrow-container">
         <div class=" col-sx-12 arrow-down text-center">
-            <a href="#como-funciona"> <img src="caret-down.svg"></a>
+            <a href="#como-funciona"> <img src="caret-down.svg" alt="bajar"></a>
         </div>
     </div>
+
     <div id="center-screen" class="ms-container ms-default">
-        <a href="javascript:void(0)" class="ms-nav-link" data-ms-target="top-screen" data-ms-exit-animation="left" data-ms-enter-animation="right">go up</a>
+       
+        
+
+      
+      
+
+                   
         <!-- ============ JUMBOTRON ============ -->
         <div class="jumbotron">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-7 tranquilo">
-                        <a class="ms-nav-link" data-ms-target="screen2" data-ms-animation="fadeleft" data-ms-vertical-distance="0" href="javascript:void(0)">
-                            <h1>Estaciones para cargar bateria en espacios pubilicos.</h1>
-                        </a>
+                    <div class="col-xs-7 tranquilo">     
+                            <h1>Estaciones para cargar celulares en espacios públicos.</h1>                     
                     </div>
                 </div>
             </div>
@@ -45,18 +62,18 @@
                 <div class="row">
                     <div class="col-md-5 como-texto">
                         <h1>¿Como Funciona?</h1>
-                        <h4> Simplemente conecta el celular, cerra el compartimiento y luego de unos minutos retiralo con bateria.</h4>
+                        <h4> Simplemente conecta el celular, cerra el compartimiento y luego de unos minutos retiralo.</h4>
                     </div>
                     <div class="col-md-6 col-md-offset-1">
                         <div class="row">
                             <div class="col-md-7 como-img">
-                                <img src="img/como1b.png">
+                                <img src="img/como1b.png" alt="Enchufá">
                             </div>
                             <div class="col-md-7 col-xs-12 como-img col-md-offset-5 text-right">
-                                <img src="img/como2b.png">
+                                <img src="img/como2b.png" alt="Cerrá el casillero">
                             </div>
                             <div class="col-md-7 como-img">
-                                <img src="img/como3b.png">
+                                <img src="img/como3b.png" alt="Retirálo">
                             </div>
                         </div>
                     </div>
@@ -73,27 +90,27 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-sm-6  beneficio text-center">
-                        <img src="img/phone.png">
+                        <img src="img/phone.png" alt="celular">
                         <h4>Carga celulares en tan solo unos minutos</h4>
                     </div>
                     <div class="col-md-4 col-sm-6  beneficio text-center">
-                        <img src="img/lock.png">
+                        <img src="img/lock.png" alt="cerradura">
                         <h4>Guarda las pertenencias de modo seguro</h4>
                     </div>
                     <div class="col-md-4 col-sm-6  beneficio text-center">
-                        <img src="img/bullhorn.png">
+                        <img src="img/bullhorn.png" alt="megáfono">
                         <h4>Incorpora publicidad tuya o de terceros</h4>
                     </div>
                     <div class="col-md-4 col-sm-6  beneficio text-center">
-                        <img src="img/bulb.png">
+                        <img src="img/bulb.png" alt="innovación">
                         <h4>Destaca tu negocio con una innovacion</h4>
                     </div>
                     <div class="col-md-4 col-sm-6  beneficio text-center">
-                        <img src="img/check.png">
+                        <img src="img/check.png" alt="satisfacción">
                         <h4>Aumenta la satisfacción de tus clientes</h4>
                     </div>
                     <div class="col-md-4 col-sm-6  beneficio text-center">
-                        <img src="img/chart.png">
+                        <img src="img/chart.png" alt="gráfico">
                         <h4>Moderniza tu marca</h4>
                     </div>
                 </div>
@@ -264,6 +281,27 @@
                     scrollTop: $(target).offset().top
                 }, 'slow', 'swing', function() {});
         });
+    </script>
+    <script type="text/javascript">
+  $(document).ready(function(){
+
+    // hide .navbar first
+    $(".navbar").hide();
+
+    // fade in .navbar
+    $(function () {
+        $(window).scroll(function () {
+
+                 // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 100) {
+                $('.navbar').fadeIn();
+            } else {
+                $('.navbar').fadeOut();
+            }
+        });
+    });
+
+    });
     </script>
 </body>
 
