@@ -1,18 +1,3 @@
-html,
-body {
-    width: 100%;
-    height: 100%
-}
-
-.ms-container {
-    width: 100%;
-    min-height: 100%;
-}
-
-.vertical-margin {
-    margin: 50px 0;
-}
-
 
 
 html,
@@ -38,11 +23,7 @@ body {
     margin-bottom: 50px;
 }
 
-html,
-body {
-    font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
-}
+
 
 p,
 li {
@@ -50,19 +31,8 @@ li {
     line-height: 25px;
 }
 
-.navbar-brand {
-    padding-top: 10px;
-    margin-bottom: 20px;
-}
 
-.navbar-nav {
-    padding-top: 6px;
-}
 
-p,
-li {
-    line-height: 25px;
-}
 
 h1,
 .arrow-down {
@@ -70,18 +40,10 @@ h1,
 }
 
 .navbar-brand {
-    padding-top: 10px;
+    padding-top: 5px;
     margin-bottom: 20px;
 }
 
-.navbar-nav {
-    padding-top: 6px;
-}
-
-.navbar-nav li a {
-    color: white !important;
-    text-shadow: 0px 0px 18px rgba(0, 0, 0, 1);
-}
 
 .beneficio img {
     height: 150px;
@@ -110,7 +72,7 @@ h1,
 .bat-img {
     display: inline !important;
     bottom: 0;
-    height: 45px;
+    height: 40px;
     margin-right: 10px;
     border-radius: 100px;
 }
@@ -121,7 +83,7 @@ h1,
 }
 
 .navbar {
-    background-color: transparent;
+
     border-bottom: none;
     color: white;
 }
@@ -255,4 +217,32 @@ ding-top: 21vh;
 }
 
 
+}
+
+
+
+
+
+/*NAVBAR*/
+
+
+.navbar-default .navbar-nav>.active>a{
+
+background-color: transparent;
+border-bottom: 4px solid #00b186;
+}
+
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent !important;
+}
+
+.navbar{
+    height: 42px;
+}
+
+.navbar-nav>li>a {
+    line-height: 16px;
 }

@@ -1,88 +1,110 @@
+<!--
+ Multi-Screen.js demo page
+ Author: Ian de Vries [ian@ian-devries.com]
+ License: MIT License [http://opensource.org/licenses/MIT]
+ -->
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <head>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700,300' rel='stylesheet' type='text/css'>
-    <link href="css/custom.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/multi-screen-css.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Get Batt - La mejor estación de carga del país</title>
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="css/custom.css" type="text/css" rel="stylesheet" />
+    <title>GetBatt</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
 </head>
 
 <body>
-    <!-- Fixed navbar -->
-    <!--     <nav class="navbar navbar-default navbar-fixed-top">
-         <div class="container">
-             <div class="navbar-header">
-                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                     <span class="sr-only">Toggle navigation</span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                 </button>
-                 <a class="navbar-brand" href="/index.html"><img class="bat-img" src="img/batt.png" alt="Logo GetBatt">
-                     <div class="get-batt-header">GETBATT</div>
-                 </a>
-             </div>
-             <div id="navbar" class="navbar-collapse collapse">
-                 <ul class="nav navbar-nav">
-                     <li><a href="/productos.html">Productos</a></li>
-                     <li><a href="/faqs.html">FAQ's</a></li>
-                     <li><a href="/contact.html">Contacto</a></li>
-                 </ul>
-             </div>
-         </div>
-     </nav> -->
-    <!-- Main jumbotron for a primary marketing message or call to action -->
 
+
+
+<!-- ============BARRA DE NEVEGACION ================-->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="batt.png" class="bat-img"> </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Inicio <span class="sr-only">(current)</span></a></li>
+        <li ><a href="#">Productos <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Contacto</a></li>
+
+      </ul>
+      
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+
+
+    <div class="arrow-container">
+        <div class=" col-sx-12 arrow-down text-center">
+            <a href="#como-funciona"> <img src="caret-down.svg" alt="bajar"></a>
+        </div>
+    </div>
+
+    <div id="center-screen" class="ms-container ms-default">
+       
+        
+
+      
+      
+
+                   
+        <!-- ============ JUMBOTRON ============ -->
         <div class="jumbotron">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-7 tranquilo">
-        <a class="ms-nav-link" data-ms-target="screen2" data-ms-animation="fadeleft" data-ms-vertical-distance="0" href="javascript:void(0)">
-                        <h1>Estaciones para cargar bateria en espacios pubilicos.</h1>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class=" col-sx-12 arrow-down text-center">
-                        <a href="#como-funciona"> <img src="caret-down.svg"></a>
+                    <div class="col-xs-7 tranquilo">     
+                            <h1>Estaciones para cargar celulares en espacios públicos.</h1>                     
                     </div>
                 </div>
             </div>
         </div>
+        <!-- ============ COMO FUNCIONA ============ -->
         <div class="container-fluid como-funciona" id="como-funciona">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 texto">
+                    <div class="col-md-5 como-texto">
                         <h1>¿Como Funciona?</h1>
-                        <h4> Simplemente conecta el celular, cerra el compartimiento y luego de unos minutos retiralo con bateria.</h4>
+                        <h4> Simplemente conecta el celular, cerra el compartimiento y luego de unos minutos retiralo.</h4>
                     </div>
                     <div class="col-md-6 col-md-offset-1">
                         <div class="row">
                             <div class="col-md-7 como-img">
-                                <img src="img/como1b.png">
+                                <img src="img/como1b.png" alt="Enchufá">
                             </div>
-                            <div class="col-md-7 como-img col-md-offset-5 text-right">
-                                <img src="img/como2b.png">
+                            <div class="col-md-7 col-xs-12 como-img col-md-offset-5 text-right">
+                                <img src="img/como2b.png" alt="Cerrá el casillero">
                             </div>
                             <div class="col-md-7 como-img">
-                                <img src="img/como3b.png">
+                                <img src="img/como3b.png" alt="Retirálo">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- ============ PORQUE ============ -->
         <div class="container-fluid porque">
             <div class="container">
                 <div class="row">
@@ -92,72 +114,64 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-sm-6  beneficio text-center">
-                        <img src="img/phone.png">
+                        <img src="img/phone.png" alt="celular">
                         <h4>Carga celulares en tan solo unos minutos</h4>
                     </div>
                     <div class="col-md-4 col-sm-6  beneficio text-center">
-                        <img src="img/lock.png">
+                        <img src="img/lock.png" alt="cerradura">
                         <h4>Guarda las pertenencias de modo seguro</h4>
                     </div>
                     <div class="col-md-4 col-sm-6  beneficio text-center">
-                        <img src="img/bullhorn.png">
+                        <img src="img/bullhorn.png" alt="megáfono">
                         <h4>Incorpora publicidad tuya o de terceros</h4>
                     </div>
                     <div class="col-md-4 col-sm-6  beneficio text-center">
-                        <img src="img/bulb.png">
+                        <img src="img/bulb.png" alt="innovación">
                         <h4>Destaca tu negocio con una innovacion</h4>
                     </div>
                     <div class="col-md-4 col-sm-6  beneficio text-center">
-                        <img src="img/check.png">
+                        <img src="img/check.png" alt="satisfacción">
                         <h4>Aumenta la satisfacción de tus clientes</h4>
                     </div>
                     <div class="col-md-4 col-sm-6  beneficio text-center">
-                        <img src="img/chart.png">
+                        <img src="img/chart.png" alt="gráfico">
                         <h4>Moderniza tu marca</h4>
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- ============ FOOTER ============ -->
 
-        <!-- Linea horizontal -->
-        <!-- footer -->
         <footer class="footer">
             <div class="container text-center">
                 <p> Rosario, Santa Fe, Argentina | info@getbatt.com.ar</p>
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.pack.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-    <div id="screen2" class="ms-container">
-        <h1>
-            Hello world!
-        </h1>
-    </div>
-    <!-- end footer -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/multi-screen.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
 
-</body>
-<script type="text/javascript">
-$(document)
-    .on('click', 'a[href^="#"]', function(e) {
-        e.preventDefault();
-        var target = $(this).attr('href');
-        $('html, body')
-            .animate({
-                scrollTop: $(target).offset().top
-            }, 'slow', 'swing', function() {});
+
+
     });
 
-
-
-
-     $(document).ready(function() {
-
-            MultiScreen.init();
-
+    $(document)
+        .on('click', 'a[href^="#"]', function(e) {
+            e.preventDefault();
+            var target = $(this).attr('href');
+            $('html, body')
+                .animate({
+                    scrollTop: $(target).offset().top
+                }, 'slow', 'swing', function() {});
         });
-</script>
+    </script>
+
+
+
+    </script>
+</body>
 
 </html>
