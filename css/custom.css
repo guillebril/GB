@@ -257,3 +257,7 @@ border-bottom: 4px solid #00b186;
     border-color: #00b19e;
 }
 
+
+.navbar-collapse.collapse.in{
+    background-color: white;
+}
