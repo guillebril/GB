@@ -218,9 +218,18 @@ ding-top: 21vh;
 
 
 }
+@media (max-width: 770px) {
 
 
+nav .container-fluid{
 
+background-color: white;
+}
+
+.navbar-header .navbar-brand, .navbar-header .navbar-toggle{
+padding-top: 12px;
+}
+}
 
 
 /*NAVBAR*/
@@ -258,6 +267,3 @@ border-bottom: 4px solid #00b186;
 }
 
 
-.navbar-collapse.collapse.in{
-    background-color: white;
-}
