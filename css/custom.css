@@ -246,3 +246,14 @@ border-bottom: 4px solid #00b186;
 .navbar-nav>li>a {
     line-height: 16px;
 }
+
+.btn-primary{
+    background-color: #00b186;
+    border-color: #00b186;
+}
+
+.btn-primary:focus, .btn-primary:hover{
+    background-color: #00b19e;
+    border-color: #00b19e;
+}
+

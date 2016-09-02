@@ -127,88 +127,76 @@
             </div>
         </footer>
     </div>
-
-
-
-
-
-
-<!-- ============== CONTACTO ==================
+    <!-- ============== CONTACTO ==================
  -->
-
-
-    <div class="modal fade"  id="myModal" tabindex="-1" role="dialog">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title">Contáctenos!</h4>
                 </div>
-                <div class="modal-body">
+              
+
+
+
                 <form name="contactform"class="form-horizontal" method="post" action="send_form_email.php">
                     <fieldset>
-                   
 
-                        <div class="form-group">
-                            <span class="col-md-1 text-center"><i class="fa fa-user bigicon"></i></span>
+                    <div class="modal-body">
+                    
+                    <div class="form-group">
+                            <span class="col-md-1  text-center"><i class="fa fa-user bigicon"></i></span>
                             <div class="col-md-12">
                                 <input id="fname" name="first_name" type="text" placeholder="Nombre" class="form-control">
                             </div>
                         </div>
                         <div class="form-group">
-                            <span class="col-md-1 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <span class="col-md-1  text-center"><i class="fa fa-user bigicon"></i></span>
                             <div class="col-md-12">
                                 <input id="lname" name="last_name" type="text" placeholder="Apellido" class="form-control">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <span class="col-md-1 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                            <span class="col-md-1  text-center"><i class="fa fa-envelope-o bigicon"></i></span>
                             <div class="col-md-12">
                                 <input id="email" name="email" type="text" placeholder="Email" class="form-control">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <span class="col-md-1 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                            <span class="col-md-1  text-center"><i class="fa fa-phone-square bigicon"></i></span>
                             <div class="col-md-12">
                                 <input id="phone" name="telephone" type="text" placeholder="Teléfono" class="form-control">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <span class="col-md-1 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <span class="col-md-1  text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
                             <div class="col-md-12">
-                                <textarea class="form-control" id="message" name="message" placeholder="Escriba aqui su mensaje. Nos contactaremos proximamente." rows="7"></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="Escriba aqui su mensaje.Nos contactaremos proximamente." rows="7"></textarea>
                             </div>
                         </div>
 
+                   
 
+                    </div>
 
-                </div>
-                <div class="modal-footer">
+                     <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                    <button type="button" value="Submit" class="btn btn-primary">Enviar</button>
-                </div>
+                     <button type="submit" value="Submit" class="btn btn-primary ">Enviar</button>
+                  </div>
 
-
-
-                      </fieldset>
+                        
+                    </fieldset>
                 </form>
-
-
             </div>
             <!-- /.modal-content -->
         </div>
         <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
-
-
-
-
-
-
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.pack.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -228,7 +216,6 @@
                 }, 'slow', 'swing', function() {});
         });
     </script>
-
 </body>
 
 </html>
