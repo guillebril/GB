@@ -1,0 +1,308 @@
+<!--
+ Multi-Screen.js demo page
+ Author: Ian de Vries [ian@ian-devries.com]
+ License: MIT License [http://opensource.org/licenses/MIT]
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="css/reset.css" type="text/css" rel="stylesheet" />
+    <link href="css/multi-screen-css.css" type="text/css" rel="stylesheet" />
+    <link href="css/custom.css" type="text/css" rel="stylesheet" />
+    <link href="css/navbar.css" type="text/css" rel="stylesheet" />
+    <title>GetBatt</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+     <a class="navbar-brand" href="#">
+        <img alt="Brand" src="...">       
+      </a>
+      <a href="javascript:void(0)" class="ms-nav-link" data-ms-target="top-screen" data-ms-exit-animation="left" data-ms-enter-animation="right">go up</a> 
+  </div>
+</nav>
+    <div class="arrow-container">
+        <div class=" col-sx-12 arrow-down text-center">
+            <a href="#como-funciona"> <img src="caret-down.svg" alt="bajar"></a>
+        </div>
+    </div>
+
+    <div id="center-screen" class="ms-container ms-default">
+       
+        
+
+      
+      
+
+                   
+        <!-- ============ JUMBOTRON ============ -->
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-7 tranquilo">     
+                            <h1>Estaciones para cargar celulares en espacios públicos.</h1>                     
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============ COMO FUNCIONA ============ -->
+        <div class="container-fluid como-funciona" id="como-funciona">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 como-texto">
+                        <h1>¿Como Funciona?</h1>
+                        <h4> Simplemente conecta el celular, cerra el compartimiento y luego de unos minutos retiralo.</h4>
+                    </div>
+                    <div class="col-md-6 col-md-offset-1">
+                        <div class="row">
+                            <div class="col-md-7 como-img">
+                                <img src="img/como1b.png" alt="Enchufá">
+                            </div>
+                            <div class="col-md-7 col-xs-12 como-img col-md-offset-5 text-right">
+                                <img src="img/como2b.png" alt="Cerrá el casillero">
+                            </div>
+                            <div class="col-md-7 como-img">
+                                <img src="img/como3b.png" alt="Retirálo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============ PORQUE ============ -->
+        <div class="container-fluid porque">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>¿Porque GetBatt?</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6  beneficio text-center">
+                        <img src="img/phone.png" alt="celular">
+                        <h4>Carga celulares en tan solo unos minutos</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-6  beneficio text-center">
+                        <img src="img/lock.png" alt="cerradura">
+                        <h4>Guarda las pertenencias de modo seguro</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-6  beneficio text-center">
+                        <img src="img/bullhorn.png" alt="megáfono">
+                        <h4>Incorpora publicidad tuya o de terceros</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-6  beneficio text-center">
+                        <img src="img/bulb.png" alt="innovación">
+                        <h4>Destaca tu negocio con una innovacion</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-6  beneficio text-center">
+                        <img src="img/check.png" alt="satisfacción">
+                        <h4>Aumenta la satisfacción de tus clientes</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-6  beneficio text-center">
+                        <img src="img/chart.png" alt="gráfico">
+                        <h4>Moderniza tu marca</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============ FOOTER ============ -->
+        <footer class="footer">
+            <div class="container text-center">
+                <p> Rosario, Santa Fe, Argentina | info@getbatt.com.ar</p>
+            </div>
+        </footer>
+    </div>
+    <!-- 
+    ====================================================
+    ================== PRODUCTOS =======================
+    ==================================================== -->
+    <div id="top-screen" class="ms-container">
+        <a href="javascript:void(0)" class="ms-nav-link" data-ms-target="center-screen" data-ms-exit-animation="right" data-ms-enter-animation="left">go down to the center</a>
+        <div class="container marketing">
+            <br>
+            <br>
+            <!-- Three columns of text below the carousel -->
+            <div class="row text-center">
+                <div class="col-lg-4">
+                    <img class="img-circle" src="img/productostandard1.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Modelo Estandar</h2>
+                    <p>Pensado para los pequeños locales con capacidad para cargar hasta 6 dispositivos al mismo tiempo.</p>
+                    <br>
+                    <p><a class="btn btn-default" href="#producto_estandar" role="button">Detalles &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="img-circle" src="img/productoempire3.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Modelo Empire</h2>
+                    <p>Ideal para locales grandes. Este dis con capacidad de hasta 14 celulares.</p>
+                    <br>
+                    <p><a class="btn btn-default" href="#producto_empire" role="button">Detalles &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="img-circle" src="./img/productosavoye4.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Modelo Savoye</h2>
+                    <p>Pensado para salas de espera en donde se desea reemplazar las mesas por estaciones de carga.</p>
+                    <br>
+                    <p><a class="btn btn-default" href="#producto_savoye" role="button">Detalles &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- /.row -->
+            <!-- START THE FEATURETTES -->
+            <section id="producto_estandar">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-6">
+                        <h2 class="featurette-heading">Modelo estandar<span class="text-muted"></span></h2>
+                        <p class="lead">Descripción:
+                            <ul>
+                                <li>6 Lockers para guardar celulares </li>
+                                <li>Un espacio para publicidad 18x50 cm (a confirmar)</li>
+                            </ul>
+                        </p>
+                        <p class="lead">Medidas:
+                            <ul>
+                                <li>alto: 61cm</li>
+                                <li>ancho: 57cm</li>
+                                <li>profundidad: 30cm</li>
+                            </ul>
+                        </p>
+                        <p class="lead">Precios:
+                            <ul>
+                                <li>Contrato de 6 meses: </li>
+                                <li>Contrato de 12 meses:</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="featurette-image img-responsive center-block" src="./img/productostandard2.jpg" alt="Generic placeholder image">
+                    </div>
+                </div>
+            </section>
+            <section id="producto_empire">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-6 ">
+                        <img class="featurette-image img-responsive center-block" src="./img/productoempire2.jpg" alt="Generic placeholder image">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="featurette-heading">Modelo Empire <span class="text-muted"></span></h2>
+                        <p class="lead">Descripción:
+                            <ul>
+                                <li>14 Lockers para guardar celulares </li>
+                                <li>Un espacio para publicidad 15x50 cm</li>
+                                <li>Incluye 7 cargadores para Iphone</li>
+                                <li>Incluye 7 cargadores para android</li>
+                            </ul>
+                        </p>
+                        <p class="lead">Medidas:
+                            <ul>
+                                <li>alto: 185cm</li>
+                                <li>ancho: 57cm</li>
+                                <li>profundidad: 30cm</li>
+                            </ul>
+                        </p>
+                        <p class="lead">Precios:
+                            <ul>
+                                <li>Contrato de 6 meses: </li>
+                                <li>Contrato de 12 meses:</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="producto_savoye">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-6">
+                        <h2 class="featurette-heading">Modelo Savoye <span class="text-muted"></span></h2>
+                        <p class="lead">Descripción:
+                            <ul>
+                                <li>6 Lockers para guardar celulares </li>
+                                <li>Un espacio para publicidad 30x30 cm</li>
+                            </ul>
+                        </p>
+                        <p class="lead">Medidas:
+                            <ul>
+                                <li>alto: 185cm</li>
+                                <li>ancho: 57cm</li>
+                                <li>profundidad: 30cm</li>
+                            </ul>
+                        </p>
+                        <p class="lead">Precios:
+                            <ul>
+                                <li>Contrato de 6 meses: </li>
+                                <li>Contrato de 12 meses:</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="featurette-image img-responsive center-block" src="./img/productosavoye3.jpg" alt="Generic placeholder image">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="container text-center">
+                <p> Rosario, Santa Fe, Argentina | info@getbatt.com.ar</p>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.pack.js"></script>
+    <script type="text/javascript" src="js/multi-screen.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        MultiScreen.init();
+
+    });
+
+    $(document)
+        .on('click', 'a[href^="#"]', function(e) {
+            e.preventDefault();
+            var target = $(this).attr('href');
+            $('html, body')
+                .animate({
+                    scrollTop: $(target).offset().top
+                }, 'slow', 'swing', function() {});
+        });
+    </script>
+    <script type="text/javascript">
+  $(document).ready(function(){
+
+    // hide .navbar first
+    $(".navbar").hide();
+
+    // fade in .navbar
+    $(function () {
+        $(window).scroll(function () {
+
+                 // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 100) {
+                $('.navbar').fadeIn();
+            } else {
+                $('.navbar').fadeOut();
+            }
+        });
+    });
+
+    });
+    </script>
+</body>
+
+</html>

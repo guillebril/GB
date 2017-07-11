@@ -1,157 +1,269 @@
-html, body {
-	font-size: 16px;
-font-family: 'Ubuntu', sans-serif;
+
+
+html,
+body {
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-p, li{
-	font-family: 'Ubuntu', sans-serif;
-
-	line-height: 25px;
+.ms-container {
+    width: 100%;
+    min-height: 100%;
 }
 
-
-
-.navbar-brand{
-	padding-top: 10px;
-	margin-bottom: 20px;
+.vertical-margin {
+    margin: 50px 0;
 }
 
-
-
-.navbar-nav{
-	padding-top: 6px;
-}
-p, li{
-	line-height: 25px;
+.margin-top {
+    margin-top: 50px;
 }
 
-h1, .arrow-down{
-	font-size: 54px !important;
+.margin-bottom {
+    margin-bottom: 50px;
 }
 
 
-.navbar-brand{;
-	padding-top: 10px;;
-	margin-bottom: 20px;
-}
 
-.navbar-nav{
-	padding-top: 6px;
-
-}
-.navbar-nav li a{
-
-	color: white !important; 
-	text-shadow: 0px 0px 18px rgba(0, 0, 0, 1);
-
-}
-.beneficio img{
-	height: 150px;
-}
-
-.beneficio{
-	margin-top: 100px;;
-	padding-right: 84px;
-	padding-left: 84px
+p,
+li {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 25px;
 }
 
 
-.tranquilo{
-padding-top: 25vh;	
+
+
+h1,
+.arrow-down {
+    font-size: 54px !important;
+}
+
+.navbar-brand {
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+.beneficio img {
+    height: 150px;
+}
+
+.beneficio {
+    margin-top: 100px;
+    padding-right: 84px;
+    padding-left: 84px;
+}
+
+.tranquilo {
+    padding-top: 25vh;
+}
+
+.porque {
+	padding-bottom: 50px;
+    background-color: #eee;
+}
+
+.jumbotron h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.bat-img {
+    display: inline !important;
+    bottom: 0;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 100px;
+}
+
+.get-batt-header {
+    display: inline;
+    color: white;
+}
+
+.navbar {
+
+    border-bottom: none;
+    color: white;
+}
+
+.jumbotron {
+    -moz-box-shadow: inset 0px 0px 0px 100000px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: inset 0px 0px 0px 100000px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 0px 0px 10000px rgba(0, 0, 0, 0.25);
+    background-image: url(../img/background-pic.jpeg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    right: 0;
+    background-position: 55%;
+    margin-bottom: 0px;
+}
+
+.como-funciona {
+    background-color: #00b186;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+.como-texto {
+	padding-top: 10rem;
+}
+
+h1,
+h4 {
+    line-height: 1.3;
+    padding-top: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 2;
+}
+
+hr {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.lead {
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+
+.como-img img {
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+.lista {
+    padding-left: 20px;
+}
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #00b186;
+    color: white;
+}
+
+.arrow-container{
+	position: absolute;
+	left: 45%;
+	top: 55%;
+	z-index: 9;
+}
+
+.arrow-down {
+    
+    animation: levitate 1.2s alternate ease-in-out infinite;
+}
+
+.arrow-down img {
+    max-height: 45px !important;
+}
+
+@keyframes levitate {}
+
+ding-top: 21vh;
+.lista {
+    padding-left: 20px;
+}
+
+
+.arrow-down {
+    padding-top: 170px;
+    animation: levitate 1.2s alternate ease-in-out infinite;
+}
+
+.arrow-down img {
+    max-height: 45px !important;
+}
+
+@keyframes levitate {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 25px);
+    }
+}
+
+
+@media (max-width: 700px) {
+
+.jumbotron h1 {
+	font-size: 30px !important;
+}
+.como-texto{
+	padding-top: 0rem;
+}
+
+#como-funciona .como-img{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
 
 }
 
 
-.porque{
-	height: 100vh;
-	background-color: #eee;
+}
+@media (max-width: 770px) {
+
+
+nav .container-fluid{
+
+background-color: white;
+}
+
+.navbar-header .navbar-brand, .navbar-header .navbar-toggle{
+padding-top: 12px;
+}
 }
 
 
-.jumbotron h1{
-	color: white;
-	font-size: 3rem;
+/*NAVBAR*/
+
+
+.navbar-default .navbar-nav>.active>a{
+
+background-color: transparent;
+border-bottom: 4px solid #00b186;
 }
 
-.bat-img{
-	display: inline !important;
-	bottom: 0;
-	height: 45px;
-	margin-right: 10px;
-	border-radius: 100px;
-}
 
-.get-batt-header{
-	display: inline;
-	color: white;
-	/*text-shadow: 0px 0px 18px rgba(0, 0, 0, 1);
-*/
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent !important;
 }
 
 .navbar{
-/*-webkit-box-shadow: inset -4px 60px 77px -45px rgba(0,0,0,0.75);
--moz-box-shadow: inset -4px 60px 77px -45px rgba(0,0,0,0.75);
-box-shadow: inset -4px 60px 77px -45px rgba(0,0,0,0.75);*/
-		background-color: transparent;
-		border-bottom: none;
-		color: white; 
+    height: 42px;
 }
 
-.jumbotron{
--moz-box-shadow: inset 0px 0px 0px 100000px rgba(0,0,0,0.25);
--webkit-box-shadow: inset 0px 0px 0px 100000px rgba(0,0,0,0.25);
-box-shadow: inset 0px 0px 0px 10000px rgba(0,0,0,0.25);
-  background-image: url(../img/background-pic.jpeg) ;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: white;/* position: fixed; */
-	height: 100vh;
-
-
-
-
-
-right: 0;
-  background-position: 55%;
-  margin-bottom: 0px;/* position: fixed; */;/* position: fixed; */;
-	
+.navbar-nav>li>a {
+    line-height: 16px;
 }
 
-.como-funciona{
-	background-color: #00b186;
-	height: 100vh;
-	color: white;
-	padding-top: 5vh;
+.btn-primary{
+    background-color: #00b186;
+    border-color: #00b186;
 }
 
-.como-img{
-	max-height: 28vh;
-
-}
-
-.como-img img{
-	height: 200px;
-}
-
-.texto{
-	padding-top: 21vh;
-}
-
-.jumbotron img{
-min-height: 185px;
-min-width: 142px;
-}
-
-.lista{
-	padding-left: 20px;
+.btn-primary:focus, .btn-primary:hover{
+    background-color: #00b19e;
+    border-color: #00b19e;
 }
 
 
-.footer{
-	padding-top: 30px;
-	padding-bottom: 20px;
-	background-color: #00b186;
-	color: white;
-}
